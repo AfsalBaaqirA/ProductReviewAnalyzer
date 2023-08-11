@@ -1,0 +1,440 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,1970" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="96">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="704,1905" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="p:PythonObject" Name="LoadPythonScriptObject" />
+      <Variable x:TypeArguments="p:PythonObject" Name="InvokePythonMethodObject" />
+      <Variable x:TypeArguments="x:String" Name="UserEmail" />
+      <Variable x:TypeArguments="x:Object" Name="ProductLink" />
+      <Variable x:TypeArguments="x:String" Name="ProductName" />
+      <Variable x:TypeArguments="x:Double" Name="sentimentValueDouble" />
+      <Variable x:TypeArguments="x:String" Name="CurrentURL" />
+      <Variable x:TypeArguments="ue:ISheetRef" Name="ChartSheet" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="662,1817" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Products.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ProductListExcel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,1548" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="586,1460" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[ProductListExcel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+              <ueab:ExcelForEachRowX.Body>
+                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="Product" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,1270" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadCellValueX Cell="[Product.ByIndex(0)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[UserEmail]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <ueab:ReadCellValueX Cell="[Product.ByIndex(1)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:Object">[ProductLink]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e5289af5-0ef3-4df5-9bf3-f9b824fb6f21" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="734,4659" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NGetText DisplayName="Get Text 'Google Pixel'" sap:VirtualizedContainerService.HintSize="692,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e5289af5-0ef3-4df5-9bf3-f9b824fb6f21" TextString="[ProductName]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/Google-Pixel-Pro-Hazel-128/dp/B0BJL964MR" DesignTimeRectangle="981, 180, 390, 64" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Google Pixel'" FullSelectorArgument="&lt;webctrl id='title' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='H1' type='' class='a-size-large a-spacing-none' aaname='        ' /&gt;" Guid="490e1efb-71d8-4872-a7c0-63c6e83dc943" InformativeScreenshot="0a666851b5f7df923f2d74db6da3ff46.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41uFMEFErtL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Google Pixel 7 Pro (Hazel, 128 GB) (12 GB RAM) : Amazon.in: Electronics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'See more reviews'" sap:VirtualizedContainerService.HintSize="692,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e5289af5-0ef3-4df5-9bf3-f9b824fb6f21" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/Google-Pixel-Pro-Hazel-128/dp/B0BJL964MR" CvTextArgument="See more reviews &gt;" CvType="Text" DesignTimeRectangle="664, 833, 124, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'See more reviews'" FullSelectorArgument="&lt;webctrl parentid='reviews-medley-footer' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='reviews-medley-footer' tag='A' type='' class='a-link-emphasis a-text-bold' aaname='See more reviews' check:innerText='See more reviews' /&gt;" Guid="f2482b55-b259-4f39-9be7-79bb47ab77a1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAWCAYAAAAIAZSVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVDSURBVGhD7VjPS2NXFM6fka10NUuXdpllli66cNGNS1clCMNYBoZRJBKDtZOKEiSzeBipGYKYNoGkhKnEGdQgEoJSiVLCxCE4r0iaCCJfz/318l7yXjQqxTbvg4u5v7577jnfPfc+PXAx0HAFMOBwBTDgcAUw4HAFMOBwBfBv4PIUhf0j1K5l/QmhQwDXqO0mMTEbxNB3M/A+n4cvHIN23JL9LvqHjtTiDDzkz9HMuWx7OrAIQH+/DC8Z6gkE4XtFwWfl+dM0/L8E/TCO8bCG3CfZ8IRgEkAdiZBQ6tS+bFK4kX8lWhcnlNL2UKw2ZIsZ12hVj5DbP0D5okfmuGpAv2ygxbiv6iiX9lA400XfTQs656C0eSWa2lD8NuubORmH+s1xD7vuwsHH6HycGa0Ga9PRYmm/afptwM4eapNcxprXzB5qM/zQMYatf3YgeOp28egNkwDaqcof27O/r26qSITFGFWGwllUlLHNA0y/tPb7tAPYubuWifB+/1yEXzdq/Eg4ijHKOqruCSwjJXWBZgmhGVMfFe/MBopN0a04p35NY3yS9UegfWbz+rfr7hyniL5m9XlEzwQHrj4gwMYENBTIN4WYGD99KPsduVrIrYh64KOwjmVlPmblg7C3nsUYq7/aQsWGp99sbbkCWocaRkxk/sUkUn8q7wOVzQXePvEbW+QalS3hLLExMj7K5i0gVKI5Nzpyq0GqSwd2QDl6eCVNJ1lH7SAOH183gtBhlRR+guissMPKTyKJbqNyWUUqOi84YiKYitMzGcT4ShwhLYlc/X529cOh50WQ/JungoT8yK7S4bUSr1oF0Jur9THGxw6vH4m5q2KuJxBHkTXsa7zuS56ilhW2jmeZvygr1E9Q/mSVdeaogm+1TVnrRscjkDbzRx7Tc0HxFpBlLFOlHnVFLOPN7h5Pwbl3YuNCdSVMB6j/ew0a66OSWBUBMpRvgnJ0W7GkZr4enRrZYnWc5Kf1U5e8u30apHO6ORkeahfDLRx6HuPMjtk0alQtrrGABhE65pPt9+HEpbLHTBoVHCH0gg7cSgzDMsMU1xm3+N3ajfE4eV9STHZOoDt8ZXzz9p2jCLoEYOCqipy2IB+FzMHn0OSJ7CwT71mWUAHsLG1HmNG/ALr7O9vsg/dQuxhu41CnmolTBM3zmlI0n+u0j86iuNRVTFzlNEZZsI+FKEYzJXEIX9C1x4aigXImBj+/qqhMRvCmbP8OcBKBswAYmtuY4MYxB7czQILFuwtS2cw449HkjP4FIB1rTt2fmYPkmlTteXrvbRfD7RzqNAbWNvhVZp5vmwF6cKl7fyJCf/nepCgiUR4PdT0YoIdgbVeDn/o8oSzPQnZ4FlzGV9M/yZqARQDF9WUE6M7Tdig17aQRCovU5F3MkwnCMLbJodk4EjJ95fJb9E5Q88V43xK1yf5UJouCStkm9C+ANv9IhPFvIxqRdekQ++A91C6BWzlu6IFKAvWy4HYcEqd9OHJd5uXBoyIff5WkmGPOXLX9NI9V4ewclcMNcRgcBDD1Sx5fL75F5ctfskWgQwDWu5+VZ3NJ45XNUk7xZ+urnf3PIFSW3fSVkFqat3JMUiqry34T7iMAO37fUt74CnEK3sPskrgDh7ifqV292CXusg8rF2Vb+bU1lpWNpbgYb8ocNTqQllgQR8Lmfw1TqTxGfojhS9P6QGTovgLUd6fl27MDxhiH707+LU39je4FHwWK38k+JzyGXY+5t8fgcvg/hMKPv+86Bp+h9xvAxf8CF38bKbwLrgAGHK4ABhyuAAYcrgAGGsA/zcWazB9lc9oAAAAASUVORK5CYII=" InformativeScreenshot="9e3809170b8f535a5174e4e927a1ff58.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41uFMEFErtL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Google Pixel 7 Pro (Hazel, 128 GB) (12 GB RAM) : Amazon.in: Electronics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="664, 819, 680, 1" FriendlyName="'HR'" FullSelectorArgument="&lt;webctrl parentid='reviews-medley-footer' tag='HR' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='reviews-medley-footer' tag='HR' type='' class='a-spacing-base a-divider-normal' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAqwAAAAFCAYAAACATr4/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA9SURBVGhD7dgxDQAwDAPB8qfUIdCcqcXg4U56DpZPAACgmMEKAEC1P1jvjCRJklTT42EFAKCawQoAQLFkAZoANO77W4wLAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetUrl CurrentUrl="[CurrentURL]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="692,87" sap2010:WorkflowViewState.IdRef="NGetUrl_2" Version="V3" />
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="692,4046" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" TemplatePath="Product_Template.xlsx" UseTemplate="True" WorkbookPath="[string.Format(&quot;Product_Details\Product-{0}.xlsx&quot;, CurrentIndex.ToString)]">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="ProductExcel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="658,3754" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="616,1558" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="9" StartAt="2">
+                                      <ui:RepeatNumberOfTimesX.Body>
+                                        <ActivityAction x:TypeArguments="x:Int32">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Int32" Name="RepeatIndex" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="582,1394" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='CurrentElement' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="540,1180" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e5289af5-0ef3-4df5-9bf3-f9b824fb6f21" Version="V3">
+                                              <uix:NForEachUiElement.Body>
+                                                <ActivityAction x:TypeArguments="x:Int32">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,915" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentElement_Label]">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ueab:WriteCellX>
+                                                    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="434,425" sap2010:WorkflowViewState.IdRef="PythonScope_5" Path="[string.Format(&quot;{0}\AppData\Local\Programs\Python\Python39&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" TargetPlatform="x64" WorkingFolder="[string.Format(&quot;{0}&quot;, System.IO.Directory.GetCurrentDirectory())]">
+                                                      <p:PythonScope.Body>
+                                                        <ActivityAction x:TypeArguments="x:Object">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+                                                          </ActivityAction.Argument>
+                                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,388" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[LoadPythonScriptObject]" ScriptFile="SentimentAnalyzer.py" />
+                                                            <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[LoadPythonScriptObject]" Name="analyzeTextSentiment" Parameters="[New List(Of Object)({CurrentElement_Label})]" Result="[InvokePythonMethodObject]" />
+                                                            <p:GetObject x:TypeArguments="x:Double" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="GetObject`1_5" PythonObject="[InvokePythonMethodObject]" Result="[sentimentValueDouble]" />
+                                                          </Sequence>
+                                                        </ActivityAction>
+                                                      </p:PythonScope.Body>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </p:PythonScope>
+                                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[sentimentValueDouble]" />
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </uix:NForEachUiElement.Body>
+                                              <uix:NForEachUiElement.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/Samsung-Galaxy-Ultra-Phantom-Storage/product-reviews/B0BT9FF5FL/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&amp;reviewerType=all_reviews&amp;pageNumber=2" DesignTimeRectangle="26, -2080, 1546, 2938" DesignTimeScaleFactor="1" FriendlyName="'From India&lt;img'" FullSelectorArgument="&lt;webctrl id='cm_cr-review_list' tag='DIV' /&gt;" Guid="752400cc-84ff-470e-8d1e-508403690fc0" InformativeScreenshot="c6bacf8d5b5d69ca56a26aec4852613c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41uFMEFErtL.css,31OSFXVtM5L.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11fJbvhE5HL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in:Customer reviews: Samsung Galaxy S23 Ultra 5G (Phantom Black, 12GB, 512GB Storage)' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                              </uix:NForEachUiElement.Target>
+                                              <uix:NForEachUiElement.Variables>
+                                                <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                                                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                                              </uix:NForEachUiElement.Variables>
+                                              <uix:NForEachUiElement.VariablesMetadata>
+                                                <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                                                  <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                                                  <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                                                </scg:List>
+                                              </uix:NForEachUiElement.VariablesMetadata>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NForEachUiElement>
+                                            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="540,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[string.Format(&quot;{0}&amp;pageNumber={1}&quot;, CurrentURL, RepeatIndex.ToString)]" Version="V3" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:RepeatNumberOfTimesX.Body>
+                                    </ui:RepeatNumberOfTimesX>
+                                    <ueab:InsertExcelChartX InsertedChart="{x:Null}" ChartCategory="Line" ChartHeight="211" ChartType="xlLine" ChartWidth="355" DisplayName="Insert Chart" sap:VirtualizedContainerService.HintSize="616,234" sap2010:WorkflowViewState.IdRef="InsertExcelChartX_1" InsertIntoSheet="[ProductExcel.Sheet(&quot;ChartSheet&quot;)]" Left="60" Range="[ProductExcel.Sheet(&quot;DataSheet&quot;).Range(&quot;B:B&quot;)]" Top="20" />
+                                    <ueab:WriteCellX Cell="[ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="616,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[&quot;=AVERAGE(B:B)&quot;]" />
+                                    <ueab:WriteCellX Cell="[ProductExcel.Sheet(&quot;ChartSheet&quot;).Cell(&quot;A20&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="616,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[&quot;Overall &#xA;Analysis: &quot;]" />
+                                    <If Condition="[ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;) &gt; 0.5]" sap:VirtualizedContainerService.HintSize="616,1193" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="476,247" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:WriteCellX Cell="[ProductExcel.Sheet(&quot;ChartSheet&quot;).Cell(&quot;B20&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[string.Format(&quot;{0} [Most likely good to buy]&quot;, ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;))]" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="552,764" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;) &lt; 0.5]" sap:VirtualizedContainerService.HintSize="510,676" sap2010:WorkflowViewState.IdRef="If_2">
+                                            <If.Then>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="476,247" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:WriteCellX Cell="[ProductExcel.Sheet(&quot;ChartSheet&quot;).Cell(&quot;B20&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[string.Format(&quot;{0} [Probably good]&quot;, ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;))]" />
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="476,247" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:WriteCellX Cell="[ProductExcel.Sheet(&quot;ChartSheet&quot;).Cell(&quot;B20&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[string.Format(&quot;{0} [Not Recommended]&quot;, ProductExcel.Sheet(&quot;DataSheet&quot;).Cell(&quot;C1&quot;))]" />
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <ueab:SaveAsPdfX DestinationPdfPath="[string.Format(&quot;Product_Report\Product-{0}-Report.pdf&quot;, CurrentIndex.ToString)]" DisplayName="Save Excel File As PDF" sap:VirtualizedContainerService.HintSize="616,159" sap2010:WorkflowViewState.IdRef="SaveAsPdfX_1" SaveQuality="StandardQuality" Workbook="[ProductExcel]">
+                                      <ueab:SaveAsPdfX.EndPage>
+                                        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                                          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="1" />
+                                        </InArgument>
+                                      </ueab:SaveAsPdfX.EndPage>
+                                      <ueab:SaveAsPdfX.StartPage>
+                                        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                                          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="1" />
+                                        </InArgument>
+                                      </ueab:SaveAsPdfX.StartPage>
+                                    </ueab:SaveAsPdfX>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="[UiPathObjectExtensions.AsText(ProductLink)]" />
+                      </uix:NApplicationCard.TargetApp>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NApplicationCard>
+                    <umab:GmailApplicationCard Account="dcprogrammerz07@gmail.com" ConnectionAccountName="" ConnectionId="PleaseSelectAnAccountId" DisplayName="Use Gmail" EmailAddress="dcprogrammerz07@gmail.com" sap:VirtualizedContainerService.HintSize="510,692" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="100" UseConnectionService="False">
+                      <umab:GmailApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,512" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <umab:SendMailX Bcc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[string.Format(&quot;You review for the requested product is generated.{0}{1}Product Name: {2}{3}Product Link: {4}{5}{6}Kindly find the report for your product.{7}{8}Note:{9}The X axis represents each review and the Y axis represents the positivity or negativity of the review. [+1 -&gt; Extremely Positive, -1 -&gt; Extremely Positive, 0 -&gt; Neutral]{10}{11}Warning:{12}This is an auto generated email. May contain misleading information by accident. Please do not fully rely on this report.&quot;, Environment.NewLine, Environment.NewLine, ProductName, Environment.NewLine, UiPathObjectExtensions.AsText(ProductLink), Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine)]" BodyType="Text" Cc="afsalbaaqir@gmail.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,424" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[string.Format(&quot;Review for {0}&quot;, ProductName)]" To="[UserEmail]" UseDocumentAsBody="False">
+                              <umab:SendMailX.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="2">
+                                  <InArgument x:TypeArguments="x:String">[string.Format("Product_Report\Product-{0}-Report.pdf", CurrentIndex.ToString)]</InArgument>
+                                  <InArgument x:TypeArguments="x:String">[string.Format("Product_Details\Product-{0}.xlsx", CurrentIndex.ToString)]</InArgument>
+                                </scg:List>
+                              </umab:SendMailX.Files>
+                              <umab:SendMailX.HtmlBodyFromFile>
+                                <umabh:HtmlContentArgument FilePath="{x:Null}">
+                                  <umabh:HtmlContentArgument.RuntimeImages>
+                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                  </umabh:HtmlContentArgument.RuntimeImages>
+                                  <umabh:HtmlContentArgument.ValueMappings>
+                                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                                  </umabh:HtmlContentArgument.ValueMappings>
+                                </umabh:HtmlContentArgument>
+                              </umab:SendMailX.HtmlBodyFromFile>
+                            </umab:SendMailX>
+                          </Sequence>
+                        </ActivityAction>
+                      </umab:GmailApplicationCard.Body>
+                      <umab:GmailApplicationCard.ClientId>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </umab:GmailApplicationCard.ClientId>
+                      <umab:GmailApplicationCard.ClientSecret>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </umab:GmailApplicationCard.ClientSecret>
+                    </umab:GmailApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelForEachRowX.Body>
+            </ueab:ExcelForEachRowX>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+    </ueab:ExcelApplicationCard>
+  </ueab:SequenceX>
+</Activity>

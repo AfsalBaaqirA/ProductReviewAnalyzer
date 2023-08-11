@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ChartSheet&SequenceX_1",
+        "CurrentURL&SequenceX_1",
+        "sentimentValueDouble&SequenceX_1",
+        "ProductName&SequenceX_1",
+        "ProductLink&SequenceX_1",
+        "UserEmail&SequenceX_1",
+        "InvokePythonMethodObject&SequenceX_1",
+        "LoadPythonScriptObject&SequenceX_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}
